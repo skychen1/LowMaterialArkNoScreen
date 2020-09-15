@@ -1,0 +1,47 @@
+libfacerecognitionv3使用方法，
+ 详细见 FaceManager 类
+* describe ：
+ *      使用说明 1. sdk激活: 可以在线激活和离线激活，只用激活一次，之后初始化直接调用 initLicense() 方法即可，
+ *                          在线激活initLicenseOnline(),
+ *                          离线激活 initLicenseOffLine()
+ *                          判断sdk是否初始完成 hasLicense
+ *
+ *                          弹出框激活方式，lib 中内置 FaceAuthDialog 类，用于弹出是否激活框，也可以根据需求自己定义界面
+ *
+ *
+ *              2. 人脸注册：startActivityFaceRegister 提供跳转界面使用，注册完成后返回的图片路径，
+ *                  需要在activity 的onActivityResult 方法中调用onActivityResultIn，回调接口用同一个即可
+ *                  注意（用户名是唯一的，不能重名）
+ *
+ *
+ *              3. 人脸图片导入功能：inportFaceImage() 直接传入图片路径，用户名和图片名字，即可，注意相同名字不可重复注册
+ *
+ *              4. 查询本地人脸数据库中注册的用户数据，可以通过queryAllUser()，queryUser(),后续还有需要可以继续添加新的方法
+ *
+ *              5. 人脸搜索匹配，直接调用 faceStartRGBSearch 需要传入一个AutoTexturePreviewView，
+ *                  如果需要显示人脸线框，需要在 faceStartRGBSearch 之前调用 initShowFrame 初始化线框绘制TextureView，
+ *                  注意退出界面后需要调用 stopPreviewAndRelease 用于释放界面和停止相机预览
+ *                  注意最好在onResume()中调用 faceStartRGBSearch， 在onPause() 中调用stopPreviewAndRelease。
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

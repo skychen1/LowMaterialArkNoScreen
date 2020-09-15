@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/seven_ll"
+			  xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:gravity="center_vertical"
+			  android:orientation="horizontal">
+	<View
+		style="@style/view_line_style"/>
+	<ImageView
+		android:id="@+id/seven_one"
+		style="@style/text_title_content_style"
+		android:layout_width="0dp"
+		android:layout_weight="0.3"
+		/>
+
+	<View
+		style="@style/view_line_style"/>
+
+	<TextView
+		android:id="@+id/seven_two"
+		style="@style/text_title_content_style"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		/>
+
+	<View
+		style="@style/view_line_style"/>
+
+	<!--<TextView-->
+		<!--android:id="@+id/seven_three"-->
+		<!--style="@style/text_title_content_style"-->
+		<!--android:layout_width="0dp"-->
+		<!--android:layout_weight="1"-->
+		<!--/>-->
+
+	<!--<View-->
+		<!--style="@style/view_line_style"/>-->
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:gravity="center"
+		>
+		<TextView
+			android:id="@+id/seven_four"
+			style="@style/view_termof_style"
+			/>
+	</LinearLayout>
+
+	<View
+		style="@style/view_line_style"/>
+
+	<TextView
+		android:id="@+id/seven_five"
+		style="@style/text_title_content_style"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		/>
+
+	<View
+		style="@style/view_line_style"/>
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:layout_weight="0.6"
+		android:gravity="center"
+		>
+		<TextView
+			android:id="@+id/seven_six_text"
+			style="@style/text_title_content_style"
+			android:layout_width="wrap_content"
+
+			/>
+		<ProgressBar
+			android:id="@+id/seven_six_loading"
+			style="@style/loading2"
+			android:visibility="gone"
+			android:layout_width="@dimen/x36"
+			android:layout_height="@dimen/x36"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"/>
+	</RelativeLayout>
+
+
+	<View
+		style="@style/view_line_style"/>
+
+</LinearLayout>

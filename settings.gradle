@@ -1,0 +1,4 @@
+include ':app', ':libdevicesbase', ':libreader', ':engineer',
+        ':libconsumables', ':libidcard', ':libfinger',
+        ':libfacerecognitionv3', ':libeth002'
+rootProject.name='LowMaterialArkNoScreen'

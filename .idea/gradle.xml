@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/engineer" />
+            <option value="$PROJECT_DIR$/libconsumables" />
+            <option value="$PROJECT_DIR$/libdevicesbase" />
+            <option value="$PROJECT_DIR$/libeth002" />
+            <option value="$PROJECT_DIR$/libfacerecognitionv3" />
+            <option value="$PROJECT_DIR$/libfinger" />
+            <option value="$PROJECT_DIR$/libidcard" />
+            <option value="$PROJECT_DIR$/libreader" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg">#E3E9F0</color>
+    <color name="bg_f">#ffffff</color>
+    <color name="text_color_3">#333333</color>
+    <color name="color_red">#F5222D</color>
+    <color name="color_red_f">#CCF5222D</color>
+    <color name="bg_delete">#F5222D</color>
+    <color name="bg_deletes">#d12f2f</color>
+    <color name="text_color_58">#585858</color>
+    <color name="color_gr">#00A98D</color>
+    <color name="bg_e">#eeeeee</color>
+    <color name="bg_c">#cccccc</color>
+    <color name="text_color_97">#979797</color>
+    <color name="color_green">#007FA9</color>
+    <!--背景色-->
+    <color name="bg_color">#f0f0f0</color>
+    <color name="bg_green">#1C6573</color>
+    <color name="item_divider">#cccccc</color>
+    <!--过期耗材信息提示-->
+    <color name="color_overdue_prompt">#F04134</color>
+    <!--近效期耗材<=100天信息提示-->
+    <color name="color_100_prompt">#F6CF3E</color>
+    <!--近效期耗材<=3个月信息提示-->
+    <color name="color_70_prompt">#F1B33F</color>
+    <!--近效期耗材<=1个月信息提示-->
+    <color name="color_28_prompt">#F18C3F</color>
+    <!--通过等警告提示-->
+    <color name="color_ok_prompt">#52C41A</color>
+    <color name="bg_de">#dedede</color>
+    <color name="text_color_6">#666666</color>
+    <color name="text_color_9">#999999</color>
+    <color name="search_bg">#E3E9F0</color>
+    <color name="color_drak_green">#1C6573</color>
+    <color name="bg_0">#00000000</color>
+    <color name="color_navy_blue">#00354B</color>
+    <color name="bg_f6">#f6f6f6</color>
+    <!--用于突出按钮文字激活状态的控件-->
+    <color name="color_g">#01B362</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+</resources>

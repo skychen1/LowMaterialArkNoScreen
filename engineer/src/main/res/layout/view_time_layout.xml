@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/bg_f"
+    android:layout_gravity="center_horizontal">
+
+    <high.rivamed.myapplication.timeutil.WheelView
+        android:id="@+id/year"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6" />
+
+    <high.rivamed.myapplication.timeutil.WheelView
+        android:id="@+id/month"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3" />
+
+    <high.rivamed.myapplication.timeutil.WheelView
+        android:id="@+id/day"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3" />
+
+    <high.rivamed.myapplication.timeutil.WheelView
+        android:id="@+id/hour"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3" />
+
+    <high.rivamed.myapplication.timeutil.WheelView
+        android:id="@+id/minute"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3" />
+
+</LinearLayout>

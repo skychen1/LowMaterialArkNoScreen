@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x860"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80"
+            android:background="@color/bg_green"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textview_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="当前时间:  "
+                android:textColor="@color/bg_f"
+                android:textSize="@dimen/textsize_17" />
+
+            <TextView
+                android:id="@+id/time_select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/bg_f"
+                android:textSize="@dimen/textsize_17" />
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#cdcdcd" />
+
+    <include layout="@layout/view_time_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_e" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/x80"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btn_time_select_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="确  定"
+            android:textColor="@color/bg_green"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_18"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_e" />
+        <Button
+            android:id="@+id/btn_time_select_empty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="清空"
+            android:textColor="@color/bg_green"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_18" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_e" />
+        <Button
+            android:id="@+id/btn_time_select_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="取  消"
+            android:textColor="@color/bg_green"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_18" />
+
+    </LinearLayout>
+
+</LinearLayout>

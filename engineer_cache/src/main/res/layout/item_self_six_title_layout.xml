@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/seven_ll"
+			  xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="horizontal">
+
+	<TextView
+		android:id="@+id/seven_one"
+		style="@style/text_title_style"
+		android:layout_width="0dp"
+		android:layout_weight="0.3"
+		/>
+
+	<View
+		style="@style/view_title_line_style"/>
+
+	<TextView
+		android:id="@+id/seven_two"
+		style="@style/text_title_style"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		/>
+
+	<View
+		style="@style/view_title_line_style"/>
+
+	<!--<TextView-->
+		<!--android:id="@+id/seven_three"-->
+		<!--style="@style/text_title_style"-->
+		<!--android:layout_width="0dp"-->
+		<!--android:layout_weight="1"-->
+		<!--/>-->
+
+	<!--<View-->
+		<!--style="@style/view_title_line_style"/>-->
+
+	<TextView
+		android:id="@+id/seven_four"
+		style="@style/text_title_style"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		/>
+
+	<View
+		style="@style/view_title_line_style"/>
+
+	<TextView
+		android:id="@+id/seven_five"
+		style="@style/text_title_style"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		/>
+
+	<View
+		style="@style/view_title_line_style"/>
+
+	<TextView
+		android:id="@+id/seven_six"
+		style="@style/text_title_style"
+		android:layout_width="0dp"
+		android:layout_weight="0.6"
+		/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="@dimen/y60"
+	android:orientation="horizontal">
+<TextView
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/y60"
+		  android:id="@+id/item_meal"
+		  android:gravity="center_vertical"
+		  android:textSize="@dimen/textsize_15"
+		  android:background="@color/bg_f"
+		  android:paddingLeft="@dimen/x20"
+		  android:paddingRight="@dimen/x20">
+
+</TextView>
+	<TextView
+		android:id="@+id/gone_meal"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

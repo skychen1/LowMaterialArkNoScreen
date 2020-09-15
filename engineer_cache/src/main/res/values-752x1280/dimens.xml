@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="textsize_10">10dp</dimen>
+	<dimen name="textsize_11">11dp</dimen>
+	<dimen name="textsize_12">12dp</dimen>
+	<dimen name="textsize_13">13dp</dimen>
+	<dimen name="textsize_14">14dp</dimen>
+	<dimen name="textsize_15">15dp</dimen>
+	<dimen name="textsize_16">16dp</dimen>
+	<dimen name="textsize_17">17dp</dimen>
+	<dimen name="textsize_18">18dp</dimen>
+	<dimen name="textsize_19">19dp</dimen>
+	<dimen name="textsize_20">20dp</dimen>
+	<dimen name="textsize_21">21dp</dimen>
+	<dimen name="textsize_22">22dp</dimen>
+	<dimen name="textsize_23">23dp</dimen>
+	<dimen name="textsize_24">24dp</dimen>
+	<dimen name="textsize_25">25dp</dimen>
+
+
+</resources>

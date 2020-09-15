@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shebeijihuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shang_view"
+            android:text="激活设备"
+            android:layout_centerInParent="true"
+            android:textColor="@color/green"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:textColor="#363636"
+            android:textSize="18sp"
+            android:text="取消" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shebeizhiwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="设备硬件指纹"
+        android:textColor="#363636"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/copy_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBaseline="@+id/shebeizhiwei"-->
+    <!--android:layout_alignBottom="@+id/shebeizhiwei"-->
+    <!--android:layout_marginStart="17dp"-->
+    <!--android:layout_toEndOf="@+id/shebeizhiwei"-->
+    <!--android:text="复制"-->
+    <!--android:textColor="#3939ee"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#000" />
+
+    <View
+        android:id="@+id/xiahuaxian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#898989" />
+
+    <RelativeLayout
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_key"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="请输入序列码"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="基于序列号自动联网激活"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/bt_on_line_active"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/fillet_style_button_selector"
+        android:text="在线激活"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/bt_inspect_sdcard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/logout_selector"
+        android:text="点击检查是否可以读取到 License 文件"
+        android:textAllCaps="false"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="请将License.zip放到SD卡根目录下"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="基于License文件手动激活，设备无需联网"
+        android:textColor="#666" />
+
+    <Button
+        android:id="@+id/bt_off_line_active"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/fillet_style_button_selector"
+        android:text="离线激活"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/xi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#898989" />
+
+</LinearLayout>

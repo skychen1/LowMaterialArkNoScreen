@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android.support.design.widget.AppBarLayout-->
+<com.google.android.material.appbar.AppBarLayout xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/appbar"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/y88"
+	android:background="@color/bg_green"
+	android:fitsSystemWindows="true"
+	app:elevation="0dp"
+	>
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/y86"
+		android:background="@color/bg_green"
+		app:contentInsetLeft="0dp"
+		app:contentInsetStart="0dp"
+		app:layout_scrollFlags="scroll|enterAlways"
+		tools:ignore="NewApi">
+		<RelativeLayout
+			android:id="@+id/base_tab_rlayout"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/y86"
+			android:background="@color/bg_green">
+			<!-- 标题栏 -->
+			<TextView
+				android:id="@+id/base_tab_back"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:drawableLeft="@mipmap/back_nor"
+				android:drawablePadding="@dimen/x15"
+				android:gravity="center_vertical"
+				android:paddingBottom="@dimen/x10"
+				android:paddingLeft="@dimen/x30"
+				android:paddingTop="@dimen/x10"
+				android:text="返回"
+				android:textStyle="bold"
+				android:textColor="@color/bg_f"
+				android:textSize="@dimen/textsize_16"
+				android:visibility="gone"
+				/>
+
+			<TextView
+				android:id="@+id/base_tab_btn_left"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:drawableLeft="@mipmap/hccz_dhl_ic_dgs"
+				android:drawablePadding="@dimen/x15"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:paddingLeft="@dimen/x10"
+
+				android:textColor="@color/bg_f"
+				android:textSize="@dimen/textsize_17"
+				android:visibility="gone"
+				/>
+
+			<TextView
+				android:id="@+id/base_tab_tv_title"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:textColor="@color/bg_f"
+				android:textSize="@dimen/textsize_20"
+				/>
+
+			<RadioGroup
+				android:id="@+id/rg_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:visibility="gone">
+
+				<RadioButton
+					android:id="@+id/stock_rdbtn_left"
+					style="@style/all_title_rb_style"
+					android:checked="true"
+					android:text="库存监控"
+					/>
+
+				<RadioButton
+					android:id="@+id/stock_rdbtn_middle"
+					style="@style/all_title_rb_style"
+					android:text="库存详情"
+					/>
+
+				<RadioButton
+					android:id="@+id/stock_rdbtn_right"
+					style="@style/all_title_rb_style"
+					android:text="未确认耗材"
+					/>
+
+			</RadioGroup>
+			<RadioGroup
+				android:id="@+id/rg_group2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:visibility="gone">
+
+				<RadioButton
+					android:id="@+id/msg_rdbtn_left"
+					style="@style/all_title_rb_style"
+					android:checked="true"
+					android:background="@drawable/title_stock_bg_middle_sel"
+					android:text=" 待办任务 "
+					/>
+
+				<RadioButton
+					android:id="@+id/msg_rdbtn_right"
+					style="@style/all_title_rb_style"
+					android:background="@drawable/title_stock_bg_middle_sel"
+					android:text="未确认耗材"
+					/>
+
+			</RadioGroup>
+			<!--增加异常处理tab-->
+			<RadioGroup
+				android:id="@+id/rg_group3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:visibility="gone">
+
+				<RadioButton
+					android:id="@+id/excp_rdbtn_left"
+					style="@style/all_title_rb_style"
+					android:checked="true"
+					android:background="@drawable/title_stock_bg_middle_sel"
+					android:text="异常处理"
+					/>
+
+				<RadioButton
+					android:id="@+id/excp_rdbtn_right"
+					style="@style/all_title_rb_style"
+					android:background="@drawable/title_stock_bg_middle_sel"
+					android:text="处理记录"
+					/>
+
+			</RadioGroup>
+
+			<RelativeLayout
+				android:id="@+id/base_tab_ll"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				>
+				<ImageView
+					android:id="@+id/base_tab_tv_outlogin"
+					android:layout_width="@dimen/x110"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:textColor="@color/bg_f"
+					android:paddingTop="@dimen/x20"
+					android:paddingBottom="@dimen/x20"
+					android:src="@mipmap/gcms_ic_tc"
+					/>
+				<TextView
+					android:id="@+id/base_tab_tv_name"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_toLeftOf="@+id/base_tab_tv_outlogin"
+					android:clickable="true"
+					android:gravity="center"
+					android:paddingRight="@dimen/x20"
+					android:textColor="@color/bg_f"
+					android:textSize="@dimen/textsize_18"
+					/>
+
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/base_tab_icon_right"
+					android:layout_width="@dimen/x80"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:paddingRight="@dimen/x20"
+					android:layout_toLeftOf="@+id/base_tab_tv_name"
+					android:src="@mipmap/hccz_mrtx_nv"
+					/>
+
+				<ImageView
+					android:id="@+id/base_tab_btn_msg"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/x15"
+					android:paddingLeft="@dimen/x20"
+					android:paddingRight="@dimen/x15"
+					android:layout_toLeftOf="@+id/base_tab_icon_right"
+					android:src="@drawable/msg_sel"
+					/>
+				<ImageView
+					android:id="@+id/base_tab_conn"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:paddingLeft="@dimen/x15"
+					android:paddingRight="@dimen/x15"
+					android:layout_toLeftOf="@+id/base_tab_btn_msg"
+					android:src="@drawable/conn_sel"
+					/>
+				<ImageView
+					android:id="@+id/base_tab_robot"
+					android:layout_width="@dimen/x80"
+					android:layout_height="@dimen/x80"
+					android:layout_centerVertical="true"
+					android:paddingLeft="@dimen/x15"
+					android:paddingRight="@dimen/x15"
+					android:layout_toLeftOf="@+id/base_tab_conn"
+					android:src="@drawable/robot_sel"
+					android:visibility="gone"
+					/>
+				<!--<ImageView-->
+					<!--android:id="@+id/base_iv_rfid"-->
+					<!--android:layout_width="@dimen/x80"-->
+					<!--android:layout_height="@dimen/x80"-->
+					<!--android:layout_centerVertical="true"-->
+					<!--android:visibility="gone"-->
+					<!--android:padding="@dimen/x15"-->
+					<!--android:layout_toLeftOf="@id/base_tab_robot"-->
+					<!--/>-->
+				<pl.droidsonroids.gif.GifImageView
+					android:id="@+id/base_iv_rfid"
+					android:layout_width="@dimen/x80"
+					android:layout_height="@dimen/x80"
+					android:layout_centerVertical="true"
+					android:visibility="gone"
+					android:padding="@dimen/x15"
+					android:layout_toLeftOf="@id/base_tab_robot"
+					 />
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</androidx.appcompat.widget.Toolbar>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/x2"
+		android:layout_alignParentBottom="true"
+		android:background="@color/item_divider"/>
+</com.google.android.material.appbar.AppBarLayout>
+
+
+

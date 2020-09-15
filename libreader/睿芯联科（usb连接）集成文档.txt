@@ -1,0 +1,21 @@
+1，将moudle（libdevicesbase）和该moudle一起烤至需要使用的项目；
+2，在需要使用的项目依赖该moudle；
+3,初始化SDK，在需要的地方调用RaylinksManager.getManager().connect(),(最好可以在application或者启动页调用);
+   有返回参数，可以根据参数查对应的设备初始化连接情况，返回码意义参考FunctionCode类型；
+
+4，在需要数据的地方注册监听，调用RaylinksManager.getManager().registerCallback（）
+     所有数据都回调到该接口中，具体回调方法及参数意义参考LocalReaderCallback（）接口类；
+     注意！！！接口中的回调方法主要都在子线程中，如果要进行数据展示，需要切换到主线程。
+
+5，具体方法的调用：
+   （1）setPower（int powerInt）：设置设备的工作功率，如果不需要设置就不调用，该方法有返回码，没有回调。
+   （2）getPower（） 获取设备工作功率，有返回码，具体结果在回调的onGetPower（）方法；
+   （3）getFrequency（） 获取设备频率，有返回码，具体结果在回调的onGetFrequency（）方法中；
+   （4）startScan（）开始扫描（盘存）标签，有返回码；扫描到标签返回到onScanNewEpc（）方法中；方法开启后，设备会一直扫描，有新标签就会返回；
+   （5）stopScan（）停止扫描（盘存）标签，有返回码，停止后不再扫描，再次调用startScan（）时又是新的一轮扫描。
+   （6）reScan（） 重新开启扫描，标签重新开始计数，从新返回数据。
+   （7）disConnect（） 断开已经连接的设备。有返回码。
+
+6，在接收数据回调的页面，当页面销毁，或者该页面不再接收数据时，一定要调用unRegisterCallback（）反注册回调！！！
+    
+   

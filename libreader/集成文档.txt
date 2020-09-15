@@ -1,0 +1,29 @@
+﻿1，将moudle（libdevicesbase）和该moudle(libreader)一起拷至需要使用的项目；
+2，在需要使用的项目中依赖该moudle；
+3，在适当的位置调用连接设备方法：
+     ReaderManager.getManager().connectReader(readerType)，传入对应的type；
+     ReaderManager.getManager().disConnectReader（readerId），断开某个设备，一般用于本地（usb，串口）连接，网络连接，断开后设备会自动重连；
+     
+4，如果需要模拟，调用 设置是否模拟方法
+     ReaderManager.getManager().setSimulation(true) 传入true，此时就是模拟为主，不用调用上述连接方法（后期会改进为调用连接方法传入模拟type就启动模拟）；
+5，在要使用的地方注册callback：     ReaderManager.getManager().registerCallback(){}；所有的数据将回调在该接口中；
+6，调用
+     ReaderManager.getManager().getConnectedDevice() 获取已连接的设备（设置回调以前连接的设备也能知道）；
+5，在需要的地方调用对应的方法ReaderManager().startScan(rodinbellId, scanTime)，进行设备扫描；
+6，所有的设备功能使用方法集合：
+      
+     （1）：startScan，开始扫描
+     （2）：stopScan  ， 停止扫描
+     （3）：setPower ，设置功率
+     （4）：checkAnt  ，查询天线状况（未实现）
+       //////////以下方法为特殊操作，很可能不用，回调中不做任何操作即可/////////
+     （5）：openLock  ，开锁
+     （6）：closeLock，关锁
+     （7）：checkLockState，检测锁状态
+     （8）：openLight，开灯
+     （9）：closeLight  关灯
+     （10）：checkLightState  检测灯状态
+7，回调的方法与参数详情参看接口ReaderlCallBack；
+
+8，使用方法可以参考demo项目的SplashActivity，TypeChooseActivity，RegisterReaderFragment；
+9, 在不再使用reader的情下，一定要反注册回调，否则可能内存泄露 ReaderManager.getManager().unRegisterCallBack();

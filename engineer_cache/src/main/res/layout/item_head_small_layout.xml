@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="@dimen/x70"
+			  android:background="@color/bg_color"
+			  android:orientation="horizontal">
+
+	<View
+		android:layout_width="@dimen/x2"
+		android:layout_height="match_parent"
+		android:background="@color/bg_de"/>
+
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:gravity="center"
+		android:text="部件名称"
+		android:textColor="@color/text_color_3"
+		android:textSize="@dimen/textsize_15"
+		android:textStyle="bold"/>
+
+	<View
+		android:layout_width="@dimen/x2"
+		android:layout_height="match_parent"
+		android:background="@color/bg_de"/>
+
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:gravity="center"
+		android:text="部件标识"
+		android:textColor="@color/text_color_3"
+		android:textSize="@dimen/textsize_15"
+		android:textStyle="bold"/>
+
+	<View
+		android:layout_width="@dimen/x2"
+		android:layout_height="match_parent"
+		android:background="@color/bg_de"/>
+
+	<TextView
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:gravity="center"
+		android:text="IP 地址"
+		android:textColor="@color/text_color_3"
+		android:textSize="@dimen/textsize_15"
+		android:textStyle="bold"/>
+
+	<View
+		android:layout_width="@dimen/x2"
+		android:layout_height="match_parent"
+		android:background="@color/bg_de"/>
+
+	<TextView
+		android:id="@+id/type_de"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:text="操 作"
+		android:textColor="@color/text_color_3"
+		android:textSize="@dimen/textsize_15"
+		android:textStyle="bold"/>
+
+	<View
+		android:layout_width="@dimen/x2"
+		android:layout_height="match_parent"
+		android:background="@color/bg_de"/>
+
+</LinearLayout>

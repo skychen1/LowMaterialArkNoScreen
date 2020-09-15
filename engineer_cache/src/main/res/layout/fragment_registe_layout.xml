@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/bg"
+			  android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginLeft="@dimen/x40"
+		android:layout_marginRight="@dimen/x40"
+		android:layout_weight="1"
+		android:background="@color/bg_f"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:orientation="horizontal"
+		android:paddingTop="@dimen/y20">
+
+		<ScrollView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/x30"
+			android:layout_marginRight="@dimen/x40"
+			android:scrollbars="vertical"
+			android:fadeScrollbars="false"
+			android:layout_weight="2">
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/x20"
+				android:orientation="vertical"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/line_top"
+					android:drawablePadding="@dimen/x30"
+					android:paddingBottom="@dimen/y40"
+					android:paddingTop="@dimen/y20"
+					android:text="设备信息："
+					android:textColor="@color/text_color_3"
+					android:textSize="@dimen/textsize_16"
+					android:textStyle="bold"/>
+				<RelativeLayout
+					android:id="@+id/frag_registe_devicetype"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/seven"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:id="@+id/seventitle"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/seven"
+						android:text="设备类型："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+
+					<RadioGroup
+						android:id="@+id/rg_device_type"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="@dimen/x55"
+						android:gravity="center_vertical"
+						android:layout_toRightOf="@+id/seventitle"
+						android:orientation="horizontal">
+
+						<RadioButton
+							android:id="@+id/rb_standard_pv"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:buttonTint="@color/text_color_58"
+							android:checked="true"
+							android:text="2.1硬件"
+							android:textColor="@color/text_color_58"
+							android:textSize="@dimen/textsize_17"/>
+
+						<RadioButton
+							android:id="@+id/rb_embed_pv"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/x50"
+							android:buttonTint="@color/text_color_58"
+							android:text="3.0硬件"
+							android:textColor="@color/text_color_58"
+							android:textSize="@dimen/textsize_17"/>
+					</RadioGroup>
+
+				</RelativeLayout>
+				<RelativeLayout
+					android:id="@+id/frag_registe_severip"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y66"
+					android:layout_marginTop="@dimen/y20"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/five"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/five"
+						android:text="服务器IP："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_severip_edit"
+						android:layout_width="@dimen/x500"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_marginLeft="@dimen/x55"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="请输入"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_17"
+						/>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_port"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/six"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/six"
+						android:text="服务器端口："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_port_edit"
+						android:layout_width="@dimen/x500"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_marginLeft="@dimen/x55"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="请输入"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_17"
+						/>
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_name"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/one"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/one"
+						android:text="设备名称："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_name_edit"
+						android:layout_width="@dimen/x500"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="请输入"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_17"
+						/>
+				</RelativeLayout>
+
+
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_number"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					>
+
+					<TextView
+						android:id="@+id/three"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/three"
+						android:text="设备序列号："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+					<EditText
+						android:id="@+id/frag_registe_number_edit"
+						android:layout_width="@dimen/x500"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="@dimen/x20"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="请输入"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_17"
+						/>
+					<!--<EditText-->
+						<!--android:id="@+id/frag_registe_number_edit"-->
+						<!--android:layout_width="@dimen/x500"-->
+						<!--android:layout_height="match_parent"-->
+						<!--android:layout_alignParentRight="true"-->
+						<!--android:layout_marginBottom="22dp"-->
+						<!--android:layout_marginLeft="@dimen/x20"-->
+						<!--android:background="@drawable/bg_password_line_nor"-->
+						<!--android:hint="请输入"-->
+						<!--android:paddingLeft="@dimen/x10"-->
+						<!--android:paddingRight="@dimen/x10"-->
+						<!--android:singleLine="true"-->
+						<!--android:textColor="@color/text_color_58"-->
+						<!--android:textSize="@dimen/textsize_17"/>-->
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_localip"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/four"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="* "
+						android:textColor="@color/color_red"
+						android:textSize="@dimen/textsize_19"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/four"
+						android:text="设备IP："
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_localip_edit"
+						android:layout_width="@dimen/x500"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_marginLeft="@dimen/x85"
+						android:background="@drawable/bg_edit_e_nor"
+						android:hint="请输入"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_17"
+						/>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_loginout"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="操作界面 "
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_loginout_edit"
+						android:layout_width="@dimen/x120"
+						android:layout_height="match_parent"
+						android:layout_toRightOf="@+id/text"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="20"
+						android:inputType="number"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_15"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/frag_registe_loginout_edit"
+						android:text="  秒后无操作自动退出(默认20s)"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<TextView
+						android:id="@+id/frag_registe_loginout_btn"
+						style="@style/btn_style_sel"
+						android:layout_width="@dimen/x100"
+						android:layout_alignParentRight="true"
+						android:layout_marginTop="@dimen/y5"
+						android:text="确认"
+						/>
+				</RelativeLayout>
+				<RelativeLayout
+					android:id="@+id/frag_registe_loginout2"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="主界面"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_loginout_edit2"
+						android:layout_width="@dimen/x120"
+						android:layout_height="match_parent"
+						android:layout_toRightOf="@+id/text2"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="60"
+						android:inputType="number"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_15"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/frag_registe_loginout_edit2"
+						android:text="  秒后无操作自动退出(默认60s)"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<TextView
+						android:id="@+id/frag_registe_loginout_btn2"
+						style="@style/btn_style_sel"
+						android:layout_width="@dimen/x100"
+						android:layout_alignParentRight="true"
+						android:layout_marginTop="@dimen/y5"
+						android:text="确认"
+						/>
+				</RelativeLayout>
+				<RelativeLayout
+					android:id="@+id/frag_registe_loginout3"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="未扫描到操作耗材"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_loginout_edit3"
+						android:layout_width="@dimen/x120"
+						android:layout_height="match_parent"
+						android:layout_toRightOf="@+id/text3"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="20"
+						android:inputType="number"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_15"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/frag_registe_loginout_edit3"
+						android:text="  秒后自动退出(默认20s)"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<TextView
+						android:id="@+id/frag_registe_loginout_btn3"
+						style="@style/btn_style_sel"
+						android:layout_width="@dimen/x100"
+						android:layout_alignParentRight="true"
+						android:layout_marginTop="@dimen/y5"
+						android:text="确认"
+						/>
+				</RelativeLayout>
+				<RelativeLayout
+					android:id="@+id/frag_registe_loginout4"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="未关门"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_loginout_edit4"
+						android:layout_width="@dimen/x120"
+						android:layout_height="match_parent"
+						android:layout_toRightOf="@+id/text4"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="600"
+						android:inputType="number"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_15"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/frag_registe_loginout_edit4"
+						android:text="  秒后语音提示(默认600秒)"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<TextView
+						android:id="@+id/frag_registe_loginout_btn4"
+						style="@style/btn_style_sel"
+						android:layout_width="@dimen/x100"
+						android:layout_alignParentRight="true"
+						android:layout_marginTop="@dimen/y5"
+						android:text="确认"
+						/>
+				</RelativeLayout>
+
+				<RelativeLayout
+					android:id="@+id/frag_registe_loginout5"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/y60"
+					android:layout_marginTop="@dimen/y30"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="删除"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<EditText
+						android:id="@+id/frag_registe_loginout_edit5"
+						android:layout_width="@dimen/x120"
+						android:layout_height="match_parent"
+						android:layout_toRightOf="@+id/text5"
+						android:background="@drawable/bg_password_line_nor"
+						android:hint="30"
+						android:inputType="number"
+						android:paddingLeft="@dimen/x10"
+						android:paddingRight="@dimen/x10"
+						android:singleLine="true"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_15"
+						/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/frag_registe_loginout_edit5"
+						android:text="  天之前的日志(默认30天)"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<TextView
+						android:id="@+id/frag_registe_loginout_btn5"
+						style="@style/btn_style_sel"
+						android:layout_width="@dimen/x100"
+						android:layout_alignParentRight="true"
+						android:layout_marginTop="@dimen/y5"
+						android:text="确认"
+						/>
+				</RelativeLayout>
+				<RelativeLayout
+					android:id="@+id/frag_registe_logcat"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/y20"
+					android:layout_marginBottom="@dimen/y20"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:id="@+id/text_closs"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:text="日志记录关闭"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+					<Switch
+						android:id="@+id/switch_btn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/y10"
+						android:layout_marginRight="@dimen/x10"
+						android:layout_toRightOf="@+id/text_closs"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_toRightOf="@+id/switch_btn"
+						android:text="日志记录开启"
+						android:textColor="@color/text_color_58"
+						android:textSize="@dimen/textsize_16"/>
+
+				</RelativeLayout>
+			</LinearLayout>
+		</ScrollView>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="3"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				>
+
+				<TextView
+					android:id="@+id/text_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@drawable/line_top"
+					android:drawablePadding="@dimen/x30"
+					android:paddingBottom="@dimen/y40"
+					android:paddingTop="@dimen/y20"
+					android:text="柜体信息："
+					android:textColor="@color/text_color_3"
+					android:textSize="@dimen/textsize_17"
+					android:textStyle="bold"/>
+				<TextView
+					android:id="@+id/frag_registe_txt"
+					style="@style/btn_style_sel"
+					android:layout_marginTop="@dimen/y15"
+					android:layout_toRightOf="@+id/text_title"
+					android:text="注册说明"
+					/>
+				<TextView
+					android:id="@+id/frag_registe_right"
+					style="@style/btn_style_sel"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/x30"
+					android:layout_marginTop="@dimen/y15"
+					android:text="添加柜体"
+					/>
+
+				<TextView
+					android:id="@+id/frag_registe_left"
+					style="@style/btn_style_sel"
+					android:layout_marginTop="@dimen/y15"
+					android:layout_toLeftOf="@+id/frag_registe_right"
+					android:text="扫描设备"
+					/>
+
+			</RelativeLayout>
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerviewc"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginRight="@dimen/x30"
+				android:background="@android:color/white"
+				android:overScrollMode="never"/>
+		</LinearLayout>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2px"
+		android:background="@color/bg_e"/>
+
+	<LinearLayout
+		android:id="@+id/activity_down_btn_one_ll"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/y128"
+		android:background="@color/bg_f"
+		android:gravity="center"
+		android:orientation="horizontal"
+		>
+
+		<TextView
+			android:id="@+id/fragment_btn_one"
+			android:layout_width="@dimen/x390"
+			android:layout_height="@dimen/y68"
+			android:background="@drawable/bg_btn_gray_sel"
+			android:gravity="center"
+			android:text="预注册"
+			android:textColor="@color/bg_f"
+			android:textSize="@dimen/textsize_18"
+			/>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/bg">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@color/bg_f"
+		android:layout_marginLeft="@dimen/x40"
+		android:layout_marginRight="@dimen/x40"
+		android:paddingTop="@dimen/x40"
+		android:paddingLeft="@dimen/x30"
+		android:paddingRight="@dimen/x30"
+		android:orientation="vertical"
+		>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="请输入S／N码进行数据同步"
+			android:textColor="@color/text_color_9"
+			android:textSize="@dimen/textsize_16"/>
+		<LinearLayout
+			android:id="@+id/frag_registe_name"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/x60"
+			android:layout_marginTop="@dimen/x30"
+			android:orientation="horizontal"
+			>
+
+			<TextView
+				android:id="@+id/one"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="* "
+				android:textColor="@color/color_red"
+				android:textSize="@dimen/textsize_19"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/x28"
+				android:layout_gravity="center_vertical"
+				android:layout_toRightOf="@+id/one"
+				android:textColor="@color/text_color_58"
+				android:text="设备序列号: "/>
+			<EditText
+				android:id="@+id/frag_registe_name_edit"
+				android:layout_width="@dimen/x550"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_vertical"
+				android:paddingLeft="@dimen/x10"
+				android:paddingRight="@dimen/x10"
+				android:layout_marginLeft="@dimen/x20"
+				android:hint="请输入"
+				android:textSize="@dimen/textsize_17" android:singleLine="true"
+				android:background="@drawable/bg_password_line_nor"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2px"
+		android:background="@color/bg_e"/>
+
+	<LinearLayout
+		android:id="@+id/activity_down_btn_one_ll"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/x128"
+		android:background="@color/bg_f"
+		android:gravity="center"
+		android:orientation="horizontal"
+		>
+
+		<TextView
+			android:id="@+id/fragment_btn_one"
+			android:layout_width="@dimen/x390"
+			android:layout_height="@dimen/x68"
+			android:background="@drawable/bg_btn_gray_sel"
+			android:gravity="center"
+			android:text="确定恢复"
+			android:textColor="@color/bg_f"
+			android:textSize="@dimen/x32"
+			/>
+
+	</LinearLayout>
+</LinearLayout>

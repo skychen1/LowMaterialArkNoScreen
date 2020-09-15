@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_weight="1"
+        android:background="@color/bg_f"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/x40"
+        android:paddingRight="@dimen/x30">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/frag_registe_logcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableLeft="@drawable/line_top"
+                android:id="@+id/text_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="活体检测"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_color_58"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/text_live" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/switch_btn"
+                android:text="请选择是否开启活体检测进行人脸识别"
+                android:textColor="@color/text_color_97"
+                android:textSize="@dimen/x28" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/fragment_btn_active"
+                android:layout_width="@dimen/x390"
+                android:layout_height="@dimen/x68"
+                android:background="@drawable/bg_btn_gray_sel"
+                android:gravity="center"
+                android:text="初始化人脸识别SDK"
+                android:textColor="@color/bg_f"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/one"
+                android:text="点击按钮激活人脸识别授权码并初始化人脸识别SDK"
+                android:textColor="@color/text_color_97"
+                android:textSize="@dimen/x28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/fragment_btn_init"
+                android:layout_width="@dimen/x390"
+                android:layout_height="@dimen/x68"
+                android:background="@drawable/bg_btn_gray_sel"
+                android:gravity="center"
+                android:text="初始化人脸底库"
+                android:textColor="@color/bg_f"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="点击按钮初始化人脸识别SDK,同步服务器人脸照并注册至本地人脸底库"
+                android:textColor="@color/text_color_97"
+                android:textSize="@dimen/x28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/fragment_btn_recongize"
+                android:layout_width="@dimen/x390"
+                android:layout_height="@dimen/x68"
+                android:background="@drawable/bg_btn_gray_sel"
+                android:gravity="center"
+                android:text="人脸识别"
+                android:textColor="@color/bg_f"
+                android:textSize="@dimen/x32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="点击按钮进行人脸识别"
+                android:textColor="@color/text_color_97"
+                android:textSize="@dimen/x28" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/text_color_97"
+                android:textSize="@dimen/x28" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

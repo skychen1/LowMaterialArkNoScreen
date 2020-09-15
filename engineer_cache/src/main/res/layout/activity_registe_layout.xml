@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/bg"
+	android:orientation="vertical">
+
+	<include
+		android:id="@+id/appbar"
+		layout="@layout/layout_all_title"
+		/>
+
+	<net.lucode.hackware.magicindicator.MagicIndicator
+		android:id="@+id/registe_tl"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/y63"
+		android:layout_below="@+id/appbar"
+		android:layout_marginLeft="@dimen/x40"
+		android:layout_marginRight="@dimen/x40"
+		android:layout_marginTop="@dimen/y18"/>
+
+
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/registe_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/appbar"
+		android:background="@color/bg"
+		android:overScrollMode="never"
+		>
+	</androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

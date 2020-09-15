@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="self_check_title">
+        <item>部件名称</item>
+        <item>部件类型</item>
+        <item>部件标识</item>
+        <item>IP地址</item>
+        <item>检测状态</item>
+    </string-array>
+</resources>
